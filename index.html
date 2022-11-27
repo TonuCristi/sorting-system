@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Sorting System</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__action">
+        <h1 class="container__action-title">Sorting System</h1>
+
+        <ul class="container__action-control-list">
+          <li class="list__item list__item--info">
+            <p class="list__item-suggestion">Read before you start</p>
+            <div class="list__item-hover">
+              <span class="list__item-hover-btn">i</span>
+              <div class="list__item-window">
+                <p class="list__item-window-steps">
+                  <span class="step">Step 1:</span> Indicate the number of bars
+                </p>
+                <p class="list__item-window-steps">
+                  <span class="step">Step 2:</span> Press the generate button
+                </p>
+                <p class="list__item-window-steps">
+                  <span class="step">Step 3:</span> Press the sort button
+                </p>
+                <p class="list__item-window-steps">
+                  <span class="step">Info:</span> If you want to reset
+                  everything just press the reset button. The limit for the
+                  input is 150.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="list__item">
+            <input
+              type="number"
+              min="1"
+              max="150"
+              value="1"
+              class="list__item-input"
+            />
+          </li>
+
+          <li class="list__item">
+            <button class="btn list__item-gnr-btn">Generate</button>
+          </li>
+
+          <li class="list__item">
+            <button class="btn list__item-rst-btn">Reset</button>
+          </li>
+
+          <li class="list__item">
+            <button class="btn list__item-srt-btn bubble--sort">
+              Bubble sort
+            </button>
+          </li>
+
+          <li class="list__item">
+            <button class="btn list__item-srt-btn insertion--sort">
+              Insertion sort
+            </button>
+          </li>
+
+          <li class="list__item">
+            <button class="btn list__item-srt-btn selection--sort">
+              Selection sort
+            </button>
+          </li>
+
+          <li class="list__item">
+            <button class="btn list__item-srt-btn merge--sort">
+              Merge sort
+            </button>
+          </li>
+
+          <li class="list__item">
+            <button class="btn list__item-srt-btn quick--sort">
+              Quick sort
+            </button>
+          </li>
+        </ul>
+
+        <!-- <p class="container__action-name">Tonu Company</p> -->
+      </div>
+
+      <div class="container__display">
+        <h1 class="container__display-state">
+          State: <span class="state">Waiting to generate...</span>
+        </h1>
+        <div class="container__display-sort-box"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
